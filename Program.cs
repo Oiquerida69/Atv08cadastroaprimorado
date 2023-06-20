@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,7 +42,8 @@ namespace Atv08cadastrodeusuarios
                         AlterarUsuario();
                         break;
                     case 5:
-                        
+                        ListarUsuarios();
+                        break;
                     case 0:
                         Console.WriteLine("Programa encerrado.");
                         break;
@@ -139,12 +140,12 @@ namespace Atv08cadastrodeusuarios
         static void ListarUsuarios()
         {
             int contador = 0;
-            while( contador < nomes.Count )
+            while (contador < nomes.Count)
             {
                 Console.WriteLine(nomes[contador]);
                 contador++;
             }
 
+        }
     }
-}
 }
