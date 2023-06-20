@@ -22,6 +22,7 @@ namespace Atv08cadastrodeusuarios
                 Console.WriteLine("2 - Buscar");
                 Console.WriteLine("3 - Deletar");
                 Console.WriteLine("4 - Alterar");
+                Console.WriteLine("5 - Listar usuarios");
                 Console.WriteLine("0 - Sair");
 
                 opcao = Convert.ToInt32(Console.ReadLine());
@@ -40,6 +41,8 @@ namespace Atv08cadastrodeusuarios
                     case 4:
                         AlterarUsuario();
                         break;
+                    case 5:
+                        
                     case 0:
                         Console.WriteLine("Programa encerrado.");
                         break;
@@ -133,6 +136,14 @@ namespace Atv08cadastrodeusuarios
                 }
             }
         }
+        static void ListarUsuarios()
+        {
+            int contador = 0;
+            while( contador < nomes.Count )
+            {
+                Console.WriteLine(nomes[contador]);
+                contador++;
+            }
 
     }
 }
